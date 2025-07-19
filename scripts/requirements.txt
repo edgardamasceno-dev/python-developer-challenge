@@ -1,0 +1,6 @@
+# Vehicle Data Generator Dependencies
+# Python 3.8+
+
+faker==19.12.0      # Generate fake data with Brazilian locale support
+rich==13.7.0        # Beautiful terminal output and progress bars
+pyyaml==6.0.1       # YAML configuration file support
