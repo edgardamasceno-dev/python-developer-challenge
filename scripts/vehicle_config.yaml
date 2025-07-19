@@ -1,0 +1,212 @@
+# Brazilian Vehicle Market Configuration
+
+brands_models:
+  # Popular Brands (60% of market)
+  Volkswagen:
+    - Gol
+    - Polo
+    - Virtus
+    - T-Cross
+    - Nivus
+    - Saveiro
+    - Voyage
+    - Jetta
+    - Tiguan
+  
+  Fiat:
+    - Mobi
+    - Argo
+    - Cronos
+    - Toro
+    - Strada
+    - Pulse
+    - Uno
+    - Palio
+    - Siena
+  
+  Chevrolet:
+    - Onix
+    - Onix Plus
+    - Prisma
+    - Cruze
+    - S10
+    - Tracker
+    - Spin
+    - Montana
+  
+  Ford:
+    - Ka
+    - Ka Sedan
+    - Fiesta
+    - Focus
+    - EcoSport
+    - Ranger
+    - Territory
+    - Fusion
+  
+  Renault:
+    - Kwid
+    - Sandero
+    - Logan
+    - Duster
+    - Captur
+    - Oroch
+    - Master
+  
+  Hyundai:
+    - HB20
+    - HB20S
+    - Creta
+    - Tucson
+    - Santa Fe
+    - Azera
+  
+  # Intermediate Brands (30% of market)
+  Toyota:
+    - Etios
+    - Yaris
+    - Corolla
+    - Corolla Cross
+    - Hilux
+    - SW4
+    - RAV4
+    - Camry
+  
+  Honda:
+    - Fit
+    - City
+    - Civic
+    - HR-V
+    - WR-V
+    - CR-V
+    - Accord
+  
+  Nissan:
+    - March
+    - Versa
+    - Kicks
+    - Frontier
+    - Sentra
+    - Altima
+  
+  Peugeot:
+    - 208
+    - 2008
+    - 3008
+    - 5008
+    - Partner
+  
+  Citroën:
+    - C3
+    - C4 Cactus
+    - C4 Lounge
+    - Aircross
+  
+  Jeep:
+    - Renegade
+    - Compass
+    - Commander
+    - Wrangler
+    - Cherokee
+  
+  # Premium Brands (10% of market)
+  BMW:
+    - 320i
+    - 330i
+    - X1
+    - X3
+    - X5
+    - Z4
+    - Serie 5
+  
+  Mercedes-Benz:
+    - C180
+    - C200
+    - GLA
+    - GLC
+    - E-Class
+    - S-Class
+  
+  Audi:
+    - A3
+    - A4
+    - Q3
+    - Q5
+    - Q7
+    - TT
+  
+  Volvo:
+    - XC40
+    - XC60
+    - XC90
+    - S60
+    - V60
+
+# Fuel types by market segment
+fuel_types:
+  common:
+    - flex         # Most common in Brazil
+    - gasoline
+  premium:
+    - gasoline
+    - hybrid
+    - electric
+  diesel:
+    - diesel       # For trucks and SUVs
+
+# Popular colors in Brazilian market
+colors:
+  popular:          # 70% of choices
+    - Branco
+    - Prata
+    - Cinza
+    - Preto
+  common:           # 20% of choices
+    - Vermelho
+    - Azul
+    - Marrom
+    - Verde
+  premium:          # 10% of choices
+    - Branco Pérola
+    - Preto Metálico
+    - Cinza Grafite
+    - Azul Metálico
+
+# Transmission types
+transmissions:
+  manual: manual
+  automatic: automatic
+  cvt: cvt
+  automated: automated_manual
+  dct: dual_clutch
+
+# Engine sizes by vehicle category (in liters)
+engine_sizes:
+  compact: [1.0, 1.3, 1.4]
+  sedan: [1.4, 1.6, 1.8, 2.0]
+  suv: [1.6, 1.8, 2.0, 2.5]
+  truck: [2.0, 2.2, 2.8, 3.0, 3.2]
+  premium: [2.0, 2.5, 3.0, 3.5, 4.0]
+
+# Market segments configuration
+market_segments:
+  popular:
+    weight: 0.6
+    price_min: 35000
+    price_max: 80000
+    depreciation_rate: 0.18
+    avg_km_per_year: 15000
+  
+  intermediate:
+    weight: 0.3
+    price_min: 80000
+    price_max: 150000
+    depreciation_rate: 0.15
+    avg_km_per_year: 12000
+  
+  premium:
+    weight: 0.1
+    price_min: 150000
+    price_max: 500000
+    depreciation_rate: 0.20
+    avg_km_per_year: 10000
